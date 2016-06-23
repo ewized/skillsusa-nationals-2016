@@ -1,0 +1,24 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane fx:controller="grade.ClassView" xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <HBox alignment="baseline_left" minWidth="175">
+            <Text fx:id="name" />
+        </HBox>
+    </left>
+    <center>
+        <HBox alignment="BASELINE_CENTER">
+            <Button fx:id="more" text="View More" onMouseClicked="#onMore" />
+        </HBox>
+    </center>
+    <right>
+        <HBox alignment="baseline_right" spacing="15">
+            <Text text="Grade:" />
+            <TextField fx:id="value" maxWidth="60" text="0"/>
+        </HBox>
+    </right>
+</BorderPane>
